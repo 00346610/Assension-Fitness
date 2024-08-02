@@ -1,0 +1,420 @@
+*{
+    padding:0;
+    margin:0;
+   box-sizing: border-box;  
+}
+
+
+body{
+    background-color:white;
+  
+   height:100vh;
+   font-family: 'Courier New', Courier, monospace;
+    background-color: #2bab0d;
+}
+
+.menu-bar{
+    text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    z-index: 2;
+}
+
+.menu-bar img{
+    height:10%;
+    width:10%;
+    margin-right:80px;
+    
+}
+
+
+
+ 
+.menu-bar ul{
+    display:inline-flex;
+    list-style:none;
+    color:white
+}
+
+.menu-bar ul li{
+    width:120px;
+    margin:15px;
+    padding:15px;
+
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+ 
+}
+
+.active,.menu-bar ul li a:hover{
+    background-color: #2bab0d ;
+    border-radius:5px;
+}
+
+.sub-menu1{
+    display:none;
+    color:black;
+
+}
+
+.menu-bar ul li:hover .sub-menu1{
+    display: block;
+    position:absolute;
+    background:#2bab0d;
+    margin-top:15px;
+    margin-left:-15px;
+
+}
+
+.menu-bar ul li:hover .sub-menu1 ul{
+    display:block;
+    margin:10px;
+}
+
+
+
+.menu-bar ul li:hover .sub-menuInspir ul,.sub-dietMenu ul{
+    display: block;
+   margin:10px;
+   
+    
+
+}
+
+
+
+.container{
+    padding:2rem;
+    background-color: white ;
+}
+
+.slider-wrapper,.slider-wrapper2{
+    position:relative;
+    max-width:48rem;
+    margin: 0 auto;
+    overflow: hidden;
+   
+}
+
+.slider,.slider2{
+    display:flex;
+    aspect-ratio: 16/9;
+    overflow:hidden;
+    box-sizing:border-box ; 
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow:0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+    border-radius:0.5rem;
+ 
+   
+}
+
+.slider a,.slider2 a {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+
+.slider img{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+
+   
+
+}
+
+
+.slider2 img{
+    width:auto;
+    height: 280px;
+    object-fit:cover;
+   
+}
+
+
+.slider-nav,.slider-nav2{
+display:flex;
+gap: 1rem;
+position:absolute;
+bottom:1.5rem ;
+left:50%;
+transform:translateX(-50%);
+z-index:2;
+
+
+}
+
+
+
+
+.slider-nav a,.slider-nav2 a{
+
+width:.8rem;
+height:.8rem;
+border-radius:50%;
+background-color:rgb(100, 95, 95);
+opacity:0.75;
+transition:opacity ease 250ms;
+
+}
+.slider-nav a:hover,.slider-nav2 a:hover{
+    opacity:1;
+}
+
+.headlines{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.bmiPara,.bmi{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.bmiQ1,.intro{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: white;
+    line-height: 1.5;
+    margin-top: 20px;
+    position: static;
+    font-weight: bolder;
+}
+
+.sport{
+    float:left;
+    width:33.33%;
+    padding:150px;
+    height:0;
+    position: relative;
+}
+
+.sport img{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+
+}
+
+.sportRow{
+    display:flex;
+   flex-wrap:wrap;
+   background-color: #2bab0d;
+}
+
+.sportRow .text{
+    position: absolute;
+      color:rgb(255, 252, 252);
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bolder;
+      text-align: left;
+      right:50%;
+      left:50%;
+      top:50%;
+      transform: translate(-50%,50%);
+      z-index: 12;
+      font-size: 24px;
+      margin-top: 17px;
+}
+
+.sportRow .bodyBuilder{
+    position: absolute;
+      color:rgb(255, 252, 252);
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bolder;
+      text-align: center;
+      right:50%;
+      left:50%;
+      top:50%;
+      transform: translate(-50%,50%);
+      z-index: 12;
+      font-size: 24px;
+      margin-top: 17px;
+}
+
+
+.sportRow .runner{
+    position: absolute;
+      color:rgb(255, 252, 252);
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bolder;
+      text-align: center;
+      right:50%;
+      left:50%;
+      top:50%;
+      transform: translate(-50%,50%);
+      z-index: 12;
+      font-size: 24px;
+      margin-top: 17px;
+}
+
+
+
+
+
+.bmi{
+    text-align: center;
+   background-color: white;
+}
+
+.assensionVid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:100vh;
+   z-index:9999;
+   position: relative; 
+   margin-bottom :234px;
+   margin-top: 0px;
+}
+
+.assensionVid img{
+    border-radius:15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+
+.weather-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    width:100%;
+    margin:0 auto;
+    padding-top:20px;
+    padding-bottom:20px;
+
+    position:relative;
+    z-index:1;
+    top:10vh;
+  
+}
+
+.weather-parent img{
+    width:70%;
+    height:auto;
+    border-radius: 15px; /* Keep the border-radius for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+.weather-parent h2{
+    font-size: 2rem;
+    text-align:center
+}
+#weather-container{
+    max-width:400px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,0.1);
+    text-align:center;
+    background-color:white ;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 360px;
+ 
+}
+
+input{
+    position:static;
+    width: calc(100%-16px);
+    padding:8px;
+    box-sizing: border-box;
+    border-radius:1px solid rgb(114, 114, 114);
+    border:1px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+button{
+    background:#2bab0d;
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:20px;
+    width:100px;
+    font-size:15px;
+}
+
+button:hover{
+    background:rgb(103, 172, 137);
+}
+
+#temp-div p{
+    font-size: 60px;
+    margin-top:-30px;
+}
+
+
+
+#weather-info{
+    font-size:20px;
+}
+
+#weather-icon{
+    width:100px;
+    height:100px;
+    margin:0 auto 10px;
+    margin:10px 0;
+    display:none;
+   
+ 
+}
+
+#hourly-forecast{
+    margin-top:50px;
+    overflow-x:auto;
+    white-space:nowrap;
+    display:flex;
+    justify-content:space-between;
+
+
+}
+
+.hourly-item{
+    flex: 0 0 auto;
+    width: 80px;
+    display:flex;
+    flex-direction:column;
+    align-items :center;
+    margin-right:10px;
+ 
+}
+
+.hourly-item img{
+    width:30px;
+    height:30px;
+    margin-bottom:5px;
+}
+
+#hourly-heading{
+    margin-top:10px;
+}
+
+.runTip{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bolder;
+    background-color: white;
+    line-height: 1.5;
+    margin-top: 250px;
+    position: static;
+}
+
